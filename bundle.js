@@ -81,6 +81,7 @@ const data = {
   "image" : "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-19/s150x150/20582732_1949294061959056_158778442647601152_a.jpg",
   "posts" : [
     {
+      "id": 1,
       "image": "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-15/e35/21434031_157722141475085_2323822816056573952_n.jpg",
       "description": "Descrição do post",
       "likes": [
@@ -101,7 +102,7 @@ const data = {
         },
         {
           "user": "biadelmont",
-          "comment": "muito bom"
+          "comment": "okie dokie"
         },
         {
           "user": "julliasaad",
@@ -110,6 +111,7 @@ const data = {
       ]
     },
     {
+      "id": 2,
       "image": "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-15/e35/21434031_157722141475085_2323822816056573952_n.jpg",
       "description": "Descrição do post",
       "likes": [
@@ -130,7 +132,7 @@ const data = {
         },
         {
           "user": "biadelmont",
-          "comment": "muito bom"
+          "comment": "okie dokie"
         },
         {
           "user": "julliasaad",
@@ -139,6 +141,7 @@ const data = {
       ]
     },
     {
+      "id": 3,
       "image": "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-15/e35/21434031_157722141475085_2323822816056573952_n.jpg",
       "description": "Descrição do post",
       "likes": [
@@ -159,7 +162,187 @@ const data = {
         },
         {
           "user": "biadelmont",
-          "comment": "muito bom"
+          "comment": "okie dokie"
+        },
+        {
+          "user": "julliasaad",
+          "comment": "legal"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-15/e35/21434031_157722141475085_2323822816056573952_n.jpg",
+      "description": "Descrição do post",
+      "likes": [
+        {
+          "user": "bernardes.felipe"
+        },
+        {
+          "user": "biadelmont"
+        },
+        {
+          "user": "julliasaad"
+        }
+      ],
+      "comments": [
+        {
+          "user": "bernardes.felipe",
+          "comment": "+qd+"
+        },
+        {
+          "user": "biadelmont",
+          "comment": "okie dokie"
+        },
+        {
+          "user": "julliasaad",
+          "comment": "legal"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-15/e35/21434031_157722141475085_2323822816056573952_n.jpg",
+      "description": "Descrição do post",
+      "likes": [
+        {
+          "user": "bernardes.felipe"
+        },
+        {
+          "user": "biadelmont"
+        },
+        {
+          "user": "julliasaad"
+        }
+      ],
+      "comments": [
+        {
+          "user": "bernardes.felipe",
+          "comment": "+qd+"
+        },
+        {
+          "user": "biadelmont",
+          "comment": "okie dokie"
+        },
+        {
+          "user": "julliasaad",
+          "comment": "legal"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-15/e35/21434031_157722141475085_2323822816056573952_n.jpg",
+      "description": "Descrição do post",
+      "likes": [
+        {
+          "user": "bernardes.felipe"
+        },
+        {
+          "user": "biadelmont"
+        },
+        {
+          "user": "julliasaad"
+        }
+      ],
+      "comments": [
+        {
+          "user": "bernardes.felipe",
+          "comment": "+qd+"
+        },
+        {
+          "user": "biadelmont",
+          "comment": "okie dokie"
+        },
+        {
+          "user": "julliasaad",
+          "comment": "legal"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-15/e35/21434031_157722141475085_2323822816056573952_n.jpg",
+      "description": "Descrição do post",
+      "likes": [
+        {
+          "user": "bernardes.felipe"
+        },
+        {
+          "user": "biadelmont"
+        },
+        {
+          "user": "julliasaad"
+        }
+      ],
+      "comments": [
+        {
+          "user": "bernardes.felipe",
+          "comment": "+qd+"
+        },
+        {
+          "user": "biadelmont",
+          "comment": "okie dokie"
+        },
+        {
+          "user": "julliasaad",
+          "comment": "legal"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-15/e35/21434031_157722141475085_2323822816056573952_n.jpg",
+      "description": "Descrição do post",
+      "likes": [
+        {
+          "user": "bernardes.felipe"
+        },
+        {
+          "user": "biadelmont"
+        },
+        {
+          "user": "julliasaad"
+        }
+      ],
+      "comments": [
+        {
+          "user": "bernardes.felipe",
+          "comment": "+qd+"
+        },
+        {
+          "user": "biadelmont",
+          "comment": "okie dokie"
+        },
+        {
+          "user": "julliasaad",
+          "comment": "legal"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "https://instagram.fsod2-1.fna.fbcdn.net/t51.2885-15/e35/21434031_157722141475085_2323822816056573952_n.jpg",
+      "description": "Descrição do post",
+      "likes": [
+        {
+          "user": "bernardes.felipe"
+        },
+        {
+          "user": "biadelmont"
+        },
+        {
+          "user": "julliasaad"
+        }
+      ],
+      "comments": [
+        {
+          "user": "bernardes.felipe",
+          "comment": "+qd+"
+        },
+        {
+          "user": "biadelmont",
+          "comment": "okie dokie"
         },
         {
           "user": "julliasaad",
@@ -193,7 +376,7 @@ const data = {
 }
 
 const user = document.getElementById('user');
-const listPosts = document.getElementById('listPosts');
+const listPosts = document.getElementById('list-posts');
 
 Object(__WEBPACK_IMPORTED_MODULE_0__user_js__["a" /* default */])(data, user);
 Object(__WEBPACK_IMPORTED_MODULE_1__posts_js__["a" /* default */])(data.posts, listPosts);
@@ -231,12 +414,22 @@ function renderUserInfo(data, element) {
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = renderUserPosts;
 function createMarkupPosts(posts) {
-  return posts.map(post => `
-    <div class="post">
-      <img src="${post.image}" alt="${post.description}" width="200" />
-      <p class="likes">${post.likes.length}</p>
-      <p class="comments">${post.comments.length}</p>
-    </div>`).join('');
+  return posts.map(post =>
+    `<li class="post">
+        <a href="#post-${post.id}">
+          <img src="${post.image}" alt="${post.description}" width="100%" />
+          <div>
+            <span class="likes"><i class="fa fa-heart" aria-hidden="true"></i> ${post.likes.length}</span>
+            <span class="comments"><i class="fa fa-comment" aria-hidden="true"></i> ${post.comments.length}</span>
+          </div>
+        </a>
+      </li>
+      <a id="post-${post.id}" class="modal" href="#close">
+        <div>
+          <img src="${post.image}" alt="${post.description}" width="500" />
+        </div>
+      </a>`
+    ).join('');
 }
 
 function renderUserPosts(data, element) {
