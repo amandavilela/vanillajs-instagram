@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 section {
   max-width: 1024px;
   margin: auto;
@@ -24,16 +28,16 @@ section {
   position: relative;
 }
 
-.list-posts li a {
+.list-posts li label {
   display: block;
   position: relative;
 }
 
-.list-posts li a:hover div {
+.list-posts li label:hover div {
   opacity: 1;
 }
 
-.list-posts li a div {
+.list-posts li label div {
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
@@ -45,37 +49,97 @@ section {
   transition: all linear 0.1s;
 }
 
-.list-posts li a div span {
+.list-posts li label div span {
   margin: auto 20px;
   color: #fff;
 }
 
 .modal {
-  position: fixed;
-  background: rgba(0,0,0,0.8);
-  z-index: 99999;
-  opacity:0;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
-  pointer-events: none;
-  cursor: default;
   display: flex;
   width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
+  z-index: 1;
+  background: rgba(0,0,0,0.8);
 }
 
-.modal:target {
+.modal-state:checked + .modal {
   opacity: 1;
-  pointer-events: auto;
+  visibility: visible;
 }
 
-.modal div {
+.modal-state {
+  display: none;
+}
+
+.modal__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal .post-details {
   margin: auto;
-  width: 42vw;
+  display: flex;
   background: #fff;
-  max-width: 800px;
-  min-width: 800px;
+  z-index: 2;
+}
+
+.modal .post-details div {
+  padding: 28px;
+  color: #000;
+  font-size: 14px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+.comments {
+  list-style: none;
+}
+
+.comments li {
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  text-decoration: none;
 }
