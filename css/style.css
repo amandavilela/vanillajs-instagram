@@ -31,6 +31,7 @@ section {
 .list-posts li label {
   display: block;
   position: relative;
+  cursor: pointer;
 }
 
 .list-posts li label:hover div {
