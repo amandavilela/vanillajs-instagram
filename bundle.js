@@ -413,30 +413,61 @@ function renderUserInfo(data, element) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = renderUserPosts;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__comments_js__ = __webpack_require__(3);
+
+
 function createMarkupPosts(posts) {
-  return posts.map(post =>
-    `<li class="post">
-        <a href="#post-${post.id}">
+
+  let postList = posts.map(post => {
+    return `<li class="post">
+        <label for="post-${post.id}">
           <img src="${post.image}" alt="${post.description}" width="100%" />
           <div>
             <span class="likes"><i class="fa fa-heart" aria-hidden="true"></i> ${post.likes.length}</span>
             <span class="comments"><i class="fa fa-comment" aria-hidden="true"></i> ${post.comments.length}</span>
           </div>
-        </a>
+        </label>
       </li>
-      <a id="post-${post.id}" class="modal" href="#close">
-        <div>
-          <img src="${post.image}" alt="${post.description}" width="500" />
+      <input class="modal-state" id="post-${post.id}" type="checkbox" />
+      <div class="modal">
+        <label class="modal__bg" for="post-${post.id}"></label>
+        <label class="modal__close" for="post-${post.id}"></label>
+        <div class="post-details">
+          <img src="${post.image}" alt="${post.description}" width="650" />
+          <div>
+            <p>${post.description}</p>
+            <ul class="comments">${Object(__WEBPACK_IMPORTED_MODULE_0__comments_js__["a" /* default */])(post.comments)}</ul>
+          </div>
         </div>
-      </a>`
-    ).join('');
+      </div>`
+    }).join('');
+
+    return postList;
 }
 
 function renderUserPosts(data, element) {
   const markup = createMarkupPosts(data);
   element.innerHTML = markup;
 
+  renderUserInfo(data, user);
+
   return data;
+}
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = createMarkupComments;
+function createMarkupComments(comments) {
+  return comments.map(comment =>
+    `<li>
+      <strong>${comment.user}</strong>
+      <span>${comment.comment}</span>
+    </li>`
+    ).join('');
 }
 
 
