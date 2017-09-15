@@ -56,7 +56,7 @@ section {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 400ms ease-in;
