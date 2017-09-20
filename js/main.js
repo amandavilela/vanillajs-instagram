@@ -1,19 +1,20 @@
-import renderUserInfo from './user.js';
-import renderUserPosts from './posts.js';
-import http from './http.js';
+import renderUserInfo from "./user.js";
+import renderUserPosts from "./posts.js";
 
-const user = document.getElementById('user');
-const listPosts = document.getElementById('list-posts');
+const user = document.getElementById("user");
+const listPosts = document.getElementById("list-posts");
 
-async function getData() {
-  return await http('http://www.mocky.io/v2/59bb3b940f0000c007622abb', 'GET');
+async function getData(url) {
+  try {
+    const response = await fetch(url);
+    response.json().then(function(data){
+      renderUserInfo(data, user);
+      renderUserPosts(data.posts, listPosts);
+    });
+  }
+  catch (err) {
+    console.log("fetch failed", err);
+  }
 }
 
-getData().then(function(data){
-    data = JSON.parse(data);
-    renderUserInfo(data, user);
-    renderUserPosts(data.posts, listPosts);
-  })
-  .catch(function(err){
-    console.log('err: ', err);
-  });
+getData("http://www.mocky.io/v2/59bb3b940f0000c007622abb");

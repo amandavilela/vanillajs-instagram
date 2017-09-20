@@ -1,4 +1,4 @@
-import createMarkupComments from './comments.js';
+import createMarkupComments from "./comments.js";
 
 function createMarkupPosts(posts) {
 
@@ -24,7 +24,7 @@ function createMarkupPosts(posts) {
           </div>
         </div>
       </div>`
-    }).join('');
+    }).join("");
 
     return postList;
 }
@@ -32,8 +32,6 @@ function createMarkupPosts(posts) {
 export default function renderUserPosts(data, element) {
   const markup = createMarkupPosts(data);
   element.innerHTML = markup;
-
-  renderUserInfo(data, user);
 
   return data;
 }
