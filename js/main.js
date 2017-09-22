@@ -7,10 +7,11 @@ const listPosts = document.getElementById("list-posts");
 async function getData(url) {
   try {
     const response = await fetch(url);
-    response.json().then(function(data){
-      renderUserInfo(data, user);
-      renderUserPosts(data.posts, listPosts);
-    });
+    const data = await response.json();
+
+    renderUserInfo(data, user);
+    renderUserPosts(data.posts, listPosts);
+
   }
   catch (err) {
     console.log("fetch failed", err);

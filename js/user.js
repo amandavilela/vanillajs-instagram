@@ -16,6 +16,4 @@ function createUserInfo(data) {
 export default function renderUserInfo(data, element) {
   const markup = createUserInfo(data);
   element.innerHTML = markup;
-
-  return data;
 };

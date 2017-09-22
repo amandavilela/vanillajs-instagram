@@ -32,6 +32,4 @@ function createMarkupPosts(posts) {
 export default function renderUserPosts(data, element) {
   const markup = createMarkupPosts(data);
   element.innerHTML = markup;
-
-  return data;
 }
